@@ -1,0 +1,68 @@
+#projects{
+    background-color: #10C9C3;
+    margin-top:-1.19em;
+    height:890px;
+}
+
+.projectblocks{
+    display: grid;
+    position: absolute;
+    align-items: stretch;
+    grid-template-rows: auto;
+    width: 100%;
+    left:0;
+    margin:8em 0 0 0;
+    grid-template: 300px 300px / auto auto auto auto;
+    grid-gap: 0px;
+    background-color:white;
+    padding: 0;
+}
+
+.block{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding:20px 0;
+}
+
+.top:nth-child(odd){
+    background: #D8D8D8;
+}
+
+.bottom:nth-child(even){
+    background-color: #D8D8D8;
+}
+
+.block:hover{
+    background-color:rgba(0,0,0,.5);
+}
+
+.otherskilltitle{
+    color:white;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 20px;
+}
+
+.skilldiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+
+.otherskill{
+    color:white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .projectblocks{
+        grid-template: 200px 200px / auto auto auto auto;
+    }
+
+    #projects{
+        height: 700px;
+    }
+}
